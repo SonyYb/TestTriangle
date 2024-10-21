@@ -1,0 +1,17 @@
+﻿<Window x:Class="TestRectungle.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestRectungle"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800" Background="AntiqueWhite">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        <Label Name="okno6" Content="Полученный треугольник разносторонний" Grid.Row="0" FontSize="26" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="button3" Content="Начать снова" Grid.Row="1" FontSize="26" Foreground="Black" Background="Coral" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Height="65" Click="button3_Click"/>
+    </Grid>
+</Window>

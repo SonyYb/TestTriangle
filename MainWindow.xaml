@@ -1,0 +1,28 @@
+﻿<Window x:Class="TestRectungle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestRectungle"
+        mc:Ignorable="d"
+        Title="Проверка треугольника" Height="450" Width="800" Background="AntiqueWhite" MaxHeight="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Введите длины сторон треугольника" FontSize="26" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="okno1" Grid.Row="1" Grid.Column="0" Height="60" Width="220" FontSize="30" TextAlignment="Center"/>
+            <TextBox x:Name="okno2" Grid.Row="1" Grid.Column="1" Height="60" Width="220" FontSize="30" TextAlignment="Center"/>
+            <TextBox x:Name="okno3" Grid.Row="1" Grid.Column="2" Height="60" Width="220" FontSize="30" TextAlignment="Center"/>
+        </Grid>
+        <Button x:Name="result" Grid.Row="2" Content="Проверить" FontSize="26" Background="Coral"  Height="65" Width="220" VerticalAlignment="Top" HorizontalAlignment="Center" Click="result_Click"/>
+    </Grid>
+</Window>
